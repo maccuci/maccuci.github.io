@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+    color: rgb(215, 215, 215);
+}
+
+h1 {
+    color: rgb(215, 215, 215);
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    z-index: -1;
+    background: linear-gradient(-45deg, #000061, #0a0183);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: GradientAnimation 15s ease infinite;
+}
+
+.header ul {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 20px 5px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.header ul li a:hover {
+    color: #1732fb;
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
